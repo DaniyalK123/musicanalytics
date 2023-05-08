@@ -2,19 +2,19 @@ WITH track AS (
   SELECT DISTINCT
     track_id,
     track_name,
-    danceability,
-    energy,
-    key,
-    loudness,
-    mode,
-    speechiness,
-    acousticness,
-    instrumentalness,
-    liveness,
-    valence,
-    tempo,
-    duration_ms,
-    time_signature
+    track_danceability,
+    track_energy,
+    track_key,
+    track_loudness,
+    track_mode,
+    track_speechiness,
+    track_acousticness,
+    track_instrumentalness,
+    track_liveness,
+    track_valence,
+    track_tempo,
+    track_duration_ms,
+    track_time_signature,
   FROM stg_raw_data
 )
 

@@ -9,14 +9,6 @@ from extractors import *
 BUCKET = os.environ.get("GCP_BUCKET")
 
 
-
-
-
-
-
-
-
-
 # Calculate the dates for the last 3 months up to the current date, one date per week
 start_date = datetime.now() - timedelta(weeks=12)
 end_date = datetime.now()
