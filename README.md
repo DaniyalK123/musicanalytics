@@ -10,6 +10,8 @@ The data pipeline consists of three main components:
 
 The data flow starts with fetching raw data from the APIs using the extractors. The raw data is then cleaned and transformed into Parquet format, which is stored in Google Cloud Storage. The Parquet files are loaded into BigQuery, where the data is modeled using dbt to create fact and dimension tables. Finally, the entire pipeline is scheduled and managed using Apache Airflow.
 
+![Data flow diagram](https://i.imgur.com/DgmxND6.png)
+
 To run the project, follow these high-level steps:
 
 1. Set up and configure the API keys, GCP credentials, and environment variables for the project.
